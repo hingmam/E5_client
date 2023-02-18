@@ -3,9 +3,228 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind -->
     <link href="/dist/output.css" rel="stylesheet" />
+    <!-- fontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Swipper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline text-red-400">PageProduct</h1>
+    <div class="w-[100wh] flex flex-col space-y-5">
+      <!-- Header -->
+      <div>
+        <!-- Top Header -->
+        <div
+          class="p-2 w-ful pr-[5%] bg-zinc-800 flex items-center justify-end"
+        >
+          <ul class="text-white flex text-md space-x-5">
+            <li>My Accout</li>
+            <li>Wish List</li>
+            <li>Checkout</li>
+            <li>My Cart</li>
+          </ul>
+        </div>
+        <!-- Second Header -->
+        <div
+          class="p-5 w-ful bg-black text-white flex flex-col border-b-4 border-yellow-400 items-center"
+        >
+          <!-- Logo / Search / Contact -->
+          <div class="flex w-[90%] justify-between items-center mb-5">
+            <div>
+              <img
+                src="https://www.goldonecomputer.com/image/catalog/Icon%20and%20Logo/Gold%20One%20New%20Logo-1.png"
+                alt="Logo"
+              />
+            </div>
+            <div class="bg-white">
+              <input type="text" placeholder="Search" class="p-2 bg-inherit" />
+              <button class="bg-yellow-400 p-2">SEARCH</button>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="fa-solid fa-phone p-3 border-2 rounded-full border-white"
+              ></div>
+              <div class="ml-3">
+                <p class="">CONTACT</p>
+                <p>010-900-950</p>
+              </div>
+              <div
+                class="fa-solid fa-bag-shopping ml-5 text-2xl bg-yellow-500 p-4 rounded-full"
+              ></div>
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="w-full">
+            <nav class="flex justify-center space-x-4 w-[30%]">
+              <a
+                href="./PageHome.html"
+                class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-500"
+                ><p class="text-white">Home</p></a
+              >
+              <a
+                href="/team"
+                class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-500"
+                ><p class="text-white">Product</p></a
+              >
+              <a
+                href="/projects"
+                class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-500"
+                ><p class="text-white">Payment</p></a
+              >
+              <a
+                href="/reports"
+                class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-500"
+                ><p class="text-white">About Us</p></a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Body -->
+      <div class="items-center justify-center flex flex-col">
+        <!-- Picture and datail -->
+        <div class="flex items-center justify-center space-x-10 w-[90%]">
+          <!-- Picture -->
+          <div class="flex flex-col">
+            <img
+              class="border-2 border-gray-200 px-5"
+              src="https://www.goldonecomputer.com/image/cache/catalog/Apple/2023/MacBook-Pro-M2-16-Grey-330x409.jpg"
+              alt=""
+            />
+            <!-- <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div> -->
+          </div>
+
+          <!-- Detail Picture -->
+          <div>
+            <h1 class="font-bold text-xl">
+              MACBOOK PRO 6 (M2 PRO / 16 GM / SSD 1TM / 16.2")
+            </h1>
+
+            <div class="flex space-x-8 text-gray-400">
+              <!--  5  star -->
+              <ul>
+                <li class="fa-regular fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+              </ul>
+              <p>0 reviews</p>
+              <p><span class="fa-solid fa-pencil"></span> Write a review</p>
+            </div>
+            <!-- Brand / Code / Price -->
+            <div
+              class="flex space-x-5 border-b-2 border-t-2 py-4 my-4 border-gray-200"
+            >
+              <div>
+                <p class="font-semibold">Brand :</p>
+                <p class="font-semibold">Product Code :</p>
+                <p class="font-bold text-xl mt-3">$ 2,989.00</p>
+              </div>
+              <div>
+                <p class="font-semibold">Apple</p>
+                <p class="font-semibold">Mac Pro M2</p>
+              </div>
+            </div>
+            <!-- Qty Add To Cart -->
+            <div>
+              <div class="flex items-center space-x-5">
+                <p class="font-semibold">Qty</p>
+                <input
+                  class="px-4 py-2 border-2 border-gray-400 w-[10%]"
+                  value="1"
+                />
+                <button class="bg-yellow-400 text-white p-3">
+                  ADD TO CART
+                </button>
+              </div>
+              <p class="font-semibold mt-3">
+                <span class="fa-solid fa-heart"></span>
+                Add to Wish List
+                <span class="fa-solid fa-right-left px-4"></span> Compare this
+                Product
+              </p>
+            </div>
+            <!-- Under Picture Datail -->
+          </div>
+        </div>
+        <!-- Under Picture and datail -->
+        <div class="flex items-center justify-center bg-slate-700 w-[90%]">
+          Hello
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
