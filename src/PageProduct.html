@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwind -->
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
     <!-- fontAwsome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <!-- Swipper js -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    /> -->
 
     <!-- Demo styles -->
-    <style>
+    <!-- <style>
       html,
       body {
         position: relative;
@@ -53,10 +53,10 @@
         height: 100%;
         object-fit: cover;
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    <div class="w-[100wh] flex flex-col space-y-5">
+    <div class="w-screen flex flex-col space-y-5 fixed h-screen">
       <!-- Header -->
       <div>
         <!-- Top Header -->
@@ -75,7 +75,9 @@
           class="p-5 w-ful bg-black text-white flex flex-col border-b-4 border-yellow-400 items-center"
         >
           <!-- Logo / Search / Contact -->
-          <div class="flex w-[90%] justify-between items-center mb-5">
+          <div
+            class="flex w-[90%] justify-between items-center mb-5 sm:flex-col lg:flex-row sm:space-y-10"
+          >
             <div>
               <img
                 src="https://www.goldonecomputer.com/image/catalog/Icon%20and%20Logo/Gold%20One%20New%20Logo-1.png"
@@ -100,8 +102,8 @@
             </div>
           </div>
           <!-- Navigation -->
-          <div class="w-full">
-            <nav class="flex justify-center space-x-4 w-[30%]">
+          <div class="w-[90%] flex m">
+            <nav class="flex justify-center space-x-4">
               <a
                 href="./PageHome.html"
                 class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-500"
@@ -117,19 +119,16 @@
                 class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-500"
                 ><p class="text-white">Payment</p></a
               >
-              <a
-                href="/reports"
-                class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-500"
-                ><p class="text-white">About Us</p></a
-              >
             </nav>
           </div>
         </div>
       </div>
       <!-- Body -->
-      <div class="items-center justify-center flex flex-col">
+      <div class="items-center justify-between flex flex-col space-y-16">
         <!-- Picture and datail -->
-        <div class="flex items-center justify-center space-x-10 w-[90%]">
+        <div
+          class="flex items-center justify-between space-x-10 w-[90%] lg:w-[50%] sm:flex-col lg:flex-row sm:space-y-10"
+        >
           <!-- Picture -->
           <div class="flex flex-col">
             <img
@@ -190,7 +189,7 @@
               <div class="flex items-center space-x-5">
                 <p class="font-semibold">Qty</p>
                 <input
-                  class="px-4 py-2 border-2 border-gray-400 w-[10%]"
+                  class="px-4 py-2 border-2 border-gray-400 w-[10%] rounded-lg"
                   value="1"
                 />
                 <button class="bg-yellow-400 text-white p-3">
@@ -208,15 +207,65 @@
           </div>
         </div>
         <!-- Under Picture and datail -->
-        <div class="flex items-center justify-center bg-slate-700 w-[90%]">
-          Hello
+        <div class="flex items-start justify-center w-[90%] flex-col">
+          <div class="flex justify-center items-center space-x-5">
+            <p class="p-2 bg-gray-700 text-white font-bold rounded-sm">
+              DESCRIPTION
+            </p>
+            <p class="text-gray-400 font-bold">REVIEWS (0)</p>
+          </div>
+          <hr class="bg-gray-300 h-[1px] w-full mb-5" />
+          <div class="flex flex-col space-y-10">
+            <h1 class="text-lg bg-yellow-300">
+              FREE: Sleeve, Mouse Wireless, Flash 32GB, Mouse Pad.
+            </h1>
+            <p>
+              -CPU: Apple M2 Pro with 12-core CPU, 19-core GPU, 16-core Neural
+              Engine <br />
+              -RAM: 16GB Unified -Storage: SSD 1TB <br />
+              -Display: 16.2" Liquid Retina XDR Display
+            </p>
+            <p>
+              -Wi-Fi 6 <br />
+
+              -Bluetooth 5 <br />
+
+              -Weigh : 2.2Kg <br />
+
+              -OS: MacOS <br />
+
+              -Color: Grey and Silver
+            </p>
+            <p>
+              Warranty - 1-year hardware <br />
+              - (No warranty for screen, battery, keyboard, fan & speaker,
+              adapter)
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="bg-black flex items-center h-full justify-center">
+        <div class="flex justify-around w-full items-center">
+          <img
+            src="https://www.goldonecomputer.com/image/catalog/Icon%20and%20Logo/Gold%20One%20New%20Logo-1.png"
+            alt="Logo"
+          />
+          <div class="text-white">
+            Contact Us <br />
+            Tel : 0123456789
+            <br />
+            Address : RUPP
+            <br />
+            Location : Googlemap.Rupp.com.kh
+          </div>
         </div>
       </div>
     </div>
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -225,6 +274,6 @@
           clickable: true,
         },
       });
-    </script>
+    </script> -->
   </body>
 </html>
